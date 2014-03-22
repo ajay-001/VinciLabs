@@ -1,0 +1,126 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'Madison';
+    src: url('../fonts/madisi__.eot');
+    src: url('../fonts/madisi__.eot') format('embedded-opentype'),
+         url('../fonts/madisi__.woff') format('woff'),
+         url('../fonts/madisi__.ttf') format('truetype'),
+         url('../fonts/madisi__.svg#MadisonSquareIncised') format('svg');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntutitling-bold.eot');
+    src: url('../fonts/ubuntutitling-bold.eot') format('embedded-opentype'),
+         url('../fonts/ubuntutitling-bold.woff') format('woff'),
+         url('../fonts/ubuntutitling-bold.ttf') format('truetype'),
+         url('../fonts/ubuntutitling-bold.svg#UbuntuTitlingBold') format('svg');
+}
+@font-face {
+    font-family: 'alex';
+    src: url('../fonts/alex/alexbrush-regular-otf-webfont.eot');
+    src: url('../fonts/alex/alexbrush-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/alex/alexbrush-regular-otf-webfont.woff') format('woff'),
+         url('../fonts/alex/alexbrush-regular-otf-webfont.ttf') format('truetype'),
+         url('../fonts/alex/alexbrush-regular-otf-webfont.svg#alex_brushregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-color:#FFC324;	
+}
+#title_row{
+	background-color:white;
+	text-align:center;	
+	margin-left:0;
+	background-image:url(../patterns/fabric_of_squares_gray.png);
+	border-bottom:1px dashed gray;
+}
+#logo{
+	max-height:7em;	
+	margin-right:2em;
+}
+#title_row h1{
+	display:inline-block;	
+	vertical-align:middle;
+	font-family: 'alex';
+	font-size:3.5em;
+	margin-top:.5em;
+}
+#projects_row{
+	background-color:#FFC324;	
+	margin-left:0;
+	font-family: 'Ubuntu';
+	font-size:1.1em;
+}
+
+.project_description{
+	margin:1em;
+	display:inline-block;
+	color:white;	
+	text-align:left;
+	vertical-align:middle;
+	margin:1em;
+}
+.clearfix{
+	clear:both;	
+}
+.center{
+	text-align:center;	
+}
+[class^="icon-"], [class*=" icon-"]{
+	position:relative !important;
+	top:.2em;	
+}
+.project img{
+	max-height:4em;
+	float:right;
+	vertical-align:middle;
+	position:relative;
+	top:.5em;
+}
+#projects_container{
+	width:60%;
+	margin:0 auto;
+	padding:4em;
+}
+footer{
+	text-align:center;
+	padding:1em;	
+}
+span.title{
+	font-size:1.2em;
+	text-shadow:1px 1px #0C0;	
+}
+span.title a{
+	color:white;	
+}
+span.title a:hover{
+	text-decoration:underline;
+}
+span{
+	text-align:center;
+}
+/* for the smaller screens */
+@media (max-width: 768px) {
+	.project img{
+		display:block;
+		margin:0 auto;
+		float:none;
+	}
+	#projects_container{
+		width:90%;
+		padding:0;
+	}
+	.row-fluid.project{
+		padding-top:1em;	
+	}
+	.center_only{
+		text-align:center;
+	}	
+	.row-fluid .span1{
+		text-align:center;
+	}
+}
